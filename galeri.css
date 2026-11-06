@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: Verdana, Geneva, sans-serif;
+  background: #fff8f0;
+  color: #3b2f2f;
+}
+
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom sama lebar */
+  gap: 12px;                             /* jarak antar gambar */
+}
+
+.galeri figure {
+  margin: 0;
+  padding: 16px;
+  background: #ffffff;
+  border: 2px solid #99f6e4;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.galeri img {
+  width: 100%;          /* gambar mengikuti lebar kolom */
+  aspect-ratio: 1 / 1;  /* semua logo berukuran seragam */
+  object-fit: contain;  /* logo utuh, tidak terpotong */
+  display: block;
+}
+
+.galeri figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #0f766e;
+}
